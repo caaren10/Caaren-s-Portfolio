@@ -3,7 +3,7 @@ body {
     margin: 0px;
     margin-left: 5px;
     padding: 0px; 
-    background: linear-gradient(to bottom, #800080, magenta, #FFA500)
+    background: lightblue
 }
 
 header, nav {
@@ -13,7 +13,7 @@ header, nav {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Push items to the edges of the container */
-    background-color:} 
+    } 
 
 nav {
     flex-wrap:wrap;
@@ -35,7 +35,7 @@ nav a {
 
 
 body .caaren_img{
-    width: 400px; /* Adjust the width as needed */
+    width: 200px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     text-align: center;
 }
