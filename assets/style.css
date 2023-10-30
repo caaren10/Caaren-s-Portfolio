@@ -3,7 +3,20 @@ body {
     margin: 0px;
     margin-left: 5px;
     padding: 0px; 
+    height: 100vh;
     background: lightblue
+}
+
+body .title{
+    font-family: 'Brush Script MT', cursive; 
+    font-size: 65px;
+    margin: 0px;
+    position: relative;
+
+}
+
+.menu-toggle{
+    display:none;
 }
 
 header, nav {
@@ -33,11 +46,9 @@ nav a {
     text-decoration: none;
 }
 
-
-body .caaren_img{
-    width: 200px; /* Adjust the width as needed */
+body .caaren_img {
+    width: 350px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-    text-align: center;
 }
 
 .screenshot_img {
@@ -46,14 +57,79 @@ body .caaren_img{
     text-align: center;
 }
 
+.footer {
+    margin: 0px;
+    padding: 0px;
+    color: #141212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer ul li {
+    margin-right: 20px;
+}
+
+.footer a {
+    color: #090808;
+    text-decoration: none;
+}
+
+/*medium*/
 @media (max-width: 1231px) {
     body{
         background: lightsalmon;
     }
+   
+    body .title{
+        font-family: 'Brush Script MT', cursive; 
+        font-size: 50px;
+        margin: 0px;
+        position: relative;
+}
 }
 
+/*small*/
 @media (max-width: 800px) {
     body{
         background: lightgreen;
     }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .menu {
+        display:none;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: absolute; top: 0px; right: 0px;
+        top: 40px; /* Adjust the top position based on your header height */
+        padding: 10px, 10px, 10px, 10px;
+        z-index: 1;
+    }
+    
+    .menu.active{
+        display:block;
+      }
+
+      .menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column; /* Align items vertically */
+    }
+
+    body .caaren_img {
+        width: 200px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .screenshot_img {
+        width: 300px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        text-align: center;
+    }
+
 }
+
+
