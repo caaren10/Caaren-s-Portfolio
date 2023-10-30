@@ -46,3 +46,14 @@ body .caaren_img{
     text-align: center;
 }
 
+@media (max-width: 1231px) {
+    body{
+        background: lightsalmon;
+    }
+}
+
+@media (max-width: 800px) {
+    body{
+        background: lightgreen;
+    }
+}
