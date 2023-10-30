@@ -19,8 +19,10 @@ Website at medium display
 ![small display of website](assets/images/portfoliosmalldisplay.png)
 Website at small display
 
+Deployed Application: "https://caaren10.github.io/Caaren-s-Portfolio/" 
+
 ## Credits
 
-
+code for reset.css file is sourced from coding bootcamp class repository week 2 activities. 
 
 ## License
