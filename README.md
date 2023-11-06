@@ -19,7 +19,7 @@ Website at medium display
 ![small display of website](assets/images/portfoliosmalldisplay.png)
 Website at small display
 
-Deployed Application: "https://caaren10.github.io/Caaren-s-Portfolio/" 
+Deployed Application: https://caaren10.github.io/Caaren-s-Portfolio/
 
 ## Credits
 

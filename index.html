@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <title> Web Development Portfolio </title>
     <link href="https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/react.css"/>
-    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="stylesheet" href="assets/react.css" />
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
@@ -15,56 +15,72 @@
         <div class="menu-toggle" id="menu-toggle"><b>Menu</b></div>
         <nav class="menu" id="menu">
             <ul>
-                <li> <a href= "#home-section"> Home </a> </li> 
-                <li> <a href= "#about-section"> About </a> </li> 
-                <li> <a href= "#projects-section"> Projects </a> </li>
-                <li> <a href= "#connections-section"> Contact </a> </li>    
+                <li> <a href="#home-section"> Home </a> </li>
+                <li> <a href="#about-section"> About </a> </li>
+                <li> <a href="#projects-section"> Projects </a> </li>
+                <li> <a href="#connections-section"> Contact </a> </li>
             </ul>
         </nav>
     </header>
 
     <main>
-      <section class ="home-section" id="home-section">
-        <h2> Caaren Muyunga </h2>
-        <h3> (pronounced 'car-in')</h3>
-        <img src="assets/images/CaarenUGUCLA1.jpg" alt="Image" class="caaren_img">
-      </section>  
-
-      <section id="about-section">
-        <h2> About </h2>
-        <p> Caaren (pronounced 'car-in') Muyunga is a software engineer. While pursuing a Bachelor of Science degree in Psychobiology, Caaren took over 12 units of courses in statistics where she gained coding skills using lanmguages like Python and R to visualize populations. She instantly felt challenged and inspired by the field of technology. After completing her undergraduate degree in Spring of 2023, Caaren returned to school to enrich her skills and earn a certificate from the UCLA Extension Full-Stack Web Development program. With experience in sales and retail and a passion for fashion and beauty, Caaren hopes to employ her tech skills in the fashion industry. Caaren capturing every memory using photography, and she loves to hike and sun bathe at the beach. </p>
-      </section>
-
-      <section id="projects-section"> 
-        <h2> Projects </h2>
-        <section>
-            <h3> First project: Increasing Accessibility for Social Media Marketing Website </h3>
-            <a href="https://caaren10.github.io/Social-Media-Marketing-Website/" target="_blank">
-                <img src ="assets/images/screenshot.png" alt="This is a screenshot of the webpage of one of Caaren's project. Click on the image to view the application." class="screenshot_img">
-            </a>
-            <p> The purpose of this project is to make the starter code more accessible. The acceptance criteria was met when the HTML elements had semantic flow, the CSS attribrutes and properties were consolidated well and accurately, and the image elements have alternative text. </p>
+        <section class="home-section" id="home-section" style="border: 1px solid black">
+            <div id="top-bar"><h2 id = "Caaren"> Caaren Muyunga </h2>
+            <h3 id = "pronounce"> (pronounced 'car-in')</h3> </div>
+            <div class="flex-container1" style="border: 1px solid black">
+                <img src="assets/images/CaarenUGUCLA1.jpg" alt="Image" class="caaren_img">
+                <section id="about-section">
+                    <h2> About </h2>
+                    <p> Caaren (pronounced 'car-in') Muyunga is a software engineer. While pursuing a Bachelor of
+                        Science degree in Psychobiology, Caaren took over 12 units of courses in statistics where she
+                        gained coding skills using lanmguages like Python and R to visualize populations. She instantly
+                        felt challenged and inspired by the field of technology. After completing her undergraduate
+                        degree in Spring of 2023, Caaren returned to school to enrich her skills and earn a certificate
+                        from the UCLA Extension Full-Stack Web Development program. With experience in sales and retail
+                        and a passion for fashion and beauty, Caaren hopes to employ her tech skills in the fashion
+                        industry. Caaren capturing every memory using photography, and she loves to hike and sun bathe
+                        at the beach. </p>
+                </section>
+            </div>
         </section>
 
-        <section>
-            <h3> More Projects Loading... </h3>
+        <section id="projects-section">
+            <h2> Projects </h2>
+            <section>
+                <h3> First project: Increasing Accessibility for Social Media Marketing Website </h3>
+                <a href="https://caaren10.github.io/Social-Media-Marketing-Website/" target="_blank">
+                    <img src="assets/images/screenshot.png"
+                        alt="This is a screenshot of the webpage of one of Caaren's project. Click on the image to view the application."
+                        class="screenshot_img">
+                </a>
+                <p> The purpose of this project is to make the starter code more accessible. The acceptance criteria was
+                    met when the HTML elements had semantic flow, the CSS attribrutes and properties were consolidated
+                    well and accurately, and the image elements have alternative text. </p>
+            </section>
+
+            <section>
+                <h3> More Projects Loading... </h3>
+            </section>
         </section>
-      </section>
     </main>
 
-    <footer id="connections-section"> 
+    <footer id="connections-section">
         <h2> Contact </h2>
-        <p> This is my professional journey. I hope it gives some insights to my contributions and impact. I am always looking for more growth opportunites!</p>
-        <ul>
-            <li> <a href= "https://www.linkedin.com/in/caaren-muyunga-a987b21b1" target="_blank"> LinkedIn</a> </li>
-            <li> <a href = "https://github.com/caaren10" target="_blank"> GitHub</a> </li>
-            <li> <a href ="mailto:scmuyunga@g.ucla.edu" target="_blank"> Email</a> </li>
-        </ul>
+        <p> This is my professional journey. I hope it gives some insights to my contributions and impact. I am always
+            looking for more growth opportunites!</p>
+        <div class="footer">
+            <ul>
+                <li> <a href="https://www.linkedin.com/in/caaren-muyunga-a987b21b1" target="_blank"> LinkedIn</a> </li>
+                <li> <a href="https://github.com/caaren10" target="_blank"> GitHub</a> </li>
+                <li> <a href="mailto:scmuyunga@g.ucla.edu" target="_blank"> Email</a> </li>
+            </ul>
+        </div>
     </footer>
 
-    <script> 
+    <script>
         const menuToggle = document.getElementById('menu-toggle');
         const menu = document.getElementById('menu');
-        
+
         menuToggle.addEventListener('click', () => {
             menu.classList.toggle('active');
         });
